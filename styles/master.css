@@ -1,0 +1,84 @@
+html, body {
+  height: 100%;
+}
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+#headline h1 {
+  text-transform: uppercase;
+  font-weight: 350;
+  letter-spacing: 3px;
+  font-size: 2.125rem;
+}
+#headline h2 {
+  text-transform: uppercase;
+  font-weight: 350;
+  letter-spacing: 6px;
+  color: var(--gray);
+  font-size: 1rem;
+}
+
+.fade-in {
+  animation: fade 3s;
+}
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  33% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.modal-header .close {
+  margin: -1rem -1rem -1rem 1rem;
+}
+.card-img-top {
+  cursor: pointer;
+}
+.text-muted.modal-close-text:hover {
+  color: black !important;
+  cursor: pointer;
+}
+#selectedImg {
+  cursor: pointer;
+}
+.modal-img-scaling {
+  max-height: 70vh;
+}
+.logo {
+  max-width: 70px;
+}
+/*fixxing footer styles */
+/* Wrapper for page content to push down footer */
+#wrap {
+background-color: hsla(400, 10%, 94%, 1);
+min-height: 100%;
+height: auto !important;
+height: 100%;
+/* Negative indent footer by it's height */
+margin: 0 auto -60px;
+}
+
+/* Set the fixed height of the footer here */
+#push,
+#footer {
+height: 60px;
+}
+
+#footer {
+
+}
+
+/* Lastly, apply responsive CSS fixes as necessary */
+@media (max-width: 767px) {
+#footer {
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+}
