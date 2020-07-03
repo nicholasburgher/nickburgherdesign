@@ -113,7 +113,10 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="scripts/index.js"></script>
     <script src="scripts/jszip.min.js"></script>
-    <script>
+    <script type="text/javascript">
+      loadPictures("HairFamily_thumb_","HairFamily","jpg",41);
+    </script>
+    <!--<script>
       if(QueryString.nm == undefined) {
         window.onload = loadPictures("HairFamily_thumb_","HairFamily","jpg",41);
         //JSZip
@@ -133,7 +136,7 @@
             jQuery("#blob").text(err);
         });
       });
-    </script>
+    </script>-->
     <script>
       $(document).ready(function(){
         $('[data-toggle="popover"]').popover();
