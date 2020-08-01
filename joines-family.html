@@ -1,0 +1,147 @@
+<!doctype html>
+<!--this is a test -->
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,900;1,300;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/master.css">
+    <title>Joines Family Photoshoot | Nick Burgher Design</title>
+  </head>
+
+  <body>
+    <script type="text/javascript">
+      function myFunction() {
+        var pw = "Washington";
+        var guess = "";
+        attempt = 1;
+        max = 4
+        while (guess != pw && attempt == 1) {
+          guess = prompt("Please enter password:");
+          attempt++;
+        }
+        while (guess != pw && attempt > 1 && attempt <= max) {
+          guess = prompt("Incorrect password! Try again:");
+          attempt++;
+        }
+        if (guess != pw && attempt > max) {
+          window.stop();
+        }
+      }
+      window.onload = myFunction();
+    </script>
+    <div id="wrap">
+      <div class="container fade-in">
+        <div class="row justify-content-between align-items-center py-4">
+          <div class="col-2 text-center">
+            <img src="images\graphics\NickBurgherDesignLogomark.svg" class="img logo" />
+          </div>
+          <div id="headline" class="col-8 text-center">
+            <h1>Nick Burgher</h1>
+            <h2>Photography</h2>
+          </div>
+          <div class="col-2 text-right">
+          </div>
+        </div>
+
+        <div class="row align-items-end mb-4">
+          <div class="col text-left">
+            <small id="breadcrumb" class="text-muted">
+              <a href="">Joines Family Photoshoot 2020</a>
+            </small>
+          </div>
+          <div class="col col-md-2 text-right">
+            <button id="blob" class="btn btn-secondary btn-large ml-auto d-none">Download All (Zip)</button>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col text-right mb-4">
+            <a href="docs\Photo Copyright Release - JoinesFamily2020.pdf" target="_blank">Copyright Release Letter</a>
+            <span>&nbsp;&nbsp;|&nbsp;&nbsp;</span>
+            <a href="docs\NBD_Invoice_001038.pdf" target="_blank">Invoice</a>
+          </div>
+        </div>
+
+
+        <section id="gallery">
+          <div class="card-columns">
+
+          </div>
+        </section>
+
+        <div class="modal fade" id="previewModal" tabindex="-1" role="dialog" aria-labelledby="previewTitle" aria-hidden="true">
+          <div class="modal-dialog" role="document" style="min-width: 80vw;">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="previewTitle"></h5>
+                <a class="modal-link ml-auto" id="modalDownloadLink" href="" target="_blank" download><button type="button" class="btn btn-success btn-large" data-toggle="popover" data-trigger="hover focus" data-placement="bottom" title="Downloading Instructions" data-content="If the download link opens your photo in a new window, right click the image from there and select 'Save Target As...' or 'Save As...' from the menu." name="download-button">Download this image</button></a>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body justify-content-center align-items-center text-center">
+                <img id="selectedImg" class="mh-75 mw-100 modal-img-scaling" onclick="this.classList.toggle('modal-img-scaling');" src="" alt="large view of selected image">
+                <br />
+                <!--<p data-dismiss="modal" class="text-muted modal-close-text">[ Close ]</p>-->
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div id="push"></div>
+    </div>
+
+    <div id="footer" class="bg-dark">
+      <div class="container text-center">
+        <h5 class="py-2"><a class="text-muted" href="https://www.facebook.com/nickburgherphotography/" target="_blank">Nick Burgher Photography | 2020</a></h5>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/1.3.8/FileSaver.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/jszip.min.js"></script>
+    <script type="text/javascript">
+      loadPictures("JoinesFamily_thumb_","JoinesFamily","jpg",64);
+    </script>
+    <!--<script>
+      if(QueryString.nm == undefined) {
+        window.onload = loadPictures("HairFamily_thumb_","HairFamily","jpg",41);
+        //JSZip
+        var zip = new JSZip();
+        zip.folder("images/full/HairFamily").file("HairFamily_10.jpg", imgData, {base64:true});
+      } else {
+        window.onload = loadPictures(QueryString.nm + "_thumb_",QueryString.nm,"jpg",QueryString.ct);
+        //JSZip
+        var zip = new JSZip();
+        zip.folder("images/full/" + QueryString.nm);
+        document.getElementById("breadcrumb").appendChild(document.createTextNode(" > " + capitalizeFLetter(QueryString.nm)));
+      }
+      jQuery("#blob").on("click", function () {
+        zip.generateAsync({type:"blob"}).then(function (blob) { // 1) generate the zip file
+            saveAs(blob, "download.zip");                          // 2) trigger the download
+        }, function (err) {
+            jQuery("#blob").text(err);
+        });
+      });
+    </script>-->
+    <script>
+      $(document).ready(function(){
+        $('[data-toggle="popover"]').popover();
+      });
+    </script>
+  </body>
+</html>
