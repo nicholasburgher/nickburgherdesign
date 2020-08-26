@@ -29,3 +29,14 @@ function capitalizeFLetter(input) {
             input.slice(1);
           return text;
         }
+
+//Jumbotron
+var jumboHeight = $('.jumbotron').outerHeight();
+function parallax(){
+    var scrolled = $(window).scrollTop();
+    $('.homepage-banner').css('height', (jumboHeight-scrolled) + 'px');
+}
+
+$(window).scroll(function(e){
+    parallax();
+});

@@ -1,0 +1,70 @@
+iframe[seamless] {
+    border: none;
+    overflow: show;
+}
+
+.jumbotron, .jumbotron-mini {
+    padding: 0;
+    overflow: hidden;
+}
+.jumbotron.homepage-banner {
+    background: url('../images/graphics/homepage/F8576FC0-0196-4C22-895A-E0AAD0F2038F.jpg') no-repeat center center;
+    background-size: cover;
+    min-height: 300px;
+}
+
+.jumbotron.homepage-banner .container {
+    min-height: 300px;
+}
+
+.jumbotron .container {
+    height: 100%;
+    width: 100%;
+    padding: 40px;
+    background: rgba(0,0,0,.5);
+}
+.jumbotron .container, .jumbotron .container a {
+    color: white;
+}
+
+.jumbotron-mini .container {
+    opacity: 0;
+    transition: all ease-in-out 300ms;
+    min-height: 200px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    
+}
+
+.jumbotron-mini .container:hover {
+    opacity: 1;
+}
+
+.jumbotron-mini.bears {
+    background: url('../images/graphics/homepage/bears_cover.jpg') no-repeat center center;
+}
+.jumbotron-mini.bears, .jumbotron-mini.bears .container {
+    min-height: 200px;
+}
+
+.jumbotron-mini.reding {
+    background: url('../images/graphics/homepage/RedingFamily_19_53.jpg') no-repeat center 20%;
+}
+
+.jumbotron-mini.reding, .jumbotron-mini.reding .container {
+    min-height: 200px;
+}
+
+.techless .jumbotron-mini {
+    background: url('../images/graphics/homepage/illustration_tech-junky.jpg') no-repeat center 20%;
+}
+
+.techless .jumbotron-mini, .techless .container {
+    min-height: 300px;
+}
+
+.jumbotron.jumbotron-mini {
+    background-size: cover;
+}
+

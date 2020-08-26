@@ -19,6 +19,14 @@ body {
   font-size: 1rem;
 }
 
+h5 em {
+  font-family: 'Fanwood Text', serif;
+}
+
+.nav-divider {
+  padding: 0 .75rem;
+}
+
 .fade-in {
   animation: fade 3s;
 }
@@ -67,10 +75,8 @@ margin: 0 auto -60px;
 #push,
 #footer {
 height: 60px;
-}
-
-#footer {
-
+display: grid;
+align-items: center;
 }
 
 /* Lastly, apply responsive CSS fixes as necessary */
