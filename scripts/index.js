@@ -1,7 +1,11 @@
 function loadPictures(tnm, nm, format, ct) {
   var cardColumns = document.querySelector("#gallery div.card-columns");
   for (var i = 0; i < ct; i++) {
-    var formattedNumber = ("0" + (i + 1)).slice(-2);
+    if(ct > 99) {
+      var formattedNumber = ("00" + (i + 1)).slice(-3);
+    } else {
+      var formattedNumber = ("0" + (i + 1)).slice(-2);
+    }
     console.log(formattedNumber);
     var divElem = document.createElement("div");
     divElem.setAttribute("class", "card");
